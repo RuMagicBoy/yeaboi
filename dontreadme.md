@@ -38,7 +38,7 @@ end)
 ---------------------------------------------------------------------------
 
 local Tab = Window:NewTab("Mps Scripts")
-local Section = Tab:NewSection("Firetouch")
+local Section = Tab:NewSection("Reach")
 Section:NewButton("Enable", "ButtonInfo", function()
     print("Clicked")
 
@@ -280,7 +280,7 @@ setsimulationradius(math.huge, math.huge)
 end )
 
 ------------------------------------------------------------------
-local Section = Tab:NewSection("Firetouch Keybind")
+local Section = Tab:NewSection("Reach Keybind")
 Section:NewKeybind("Open", "Open", Enum.KeyCode.K, function()
 	_G.BallName = "TPS"
 _G.Magnitude = 7
@@ -523,7 +523,7 @@ setsimulationradius(math.huge, math.huge)
 
 end)
 
-local Section = Tab:NewSection("Firetouch Slider")
+local Section = Tab:NewSection("Reach Slider")
 Section:NewSlider("Slider", "pro", 100, 0, function(s) -- 100 (MaxValue) | 0 (MinValue)
     _G.BallName = "TPS"
 _G.Magnitude = s
